@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookMarked, Landmark, Award, Users } from 'lucide-react';
+import campusLiterarySociety from '../assets/images/campus_literary_society_1790412848157.jpg';
 
 export const AboutUsSection: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ export const AboutUsSection: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-sm overflow-hidden border border-stone-300 shadow-sm aspect-[16/9] bg-stone-100">
               <img
-                src="/src/assets/images/campus_literary_society_1790412848157.jpg"
+                src={campusLiterarySociety}
                 alt="Pratidhwani editorial board in library archives"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
