@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import { User, Article, Edition, AppNotification, ArticleStatus, Comment, Category, UserRole } from '../types';
 import { INITIAL_USERS, INITIAL_ARTICLES, INITIAL_EDITION, INITIAL_NOTIFICATIONS, BANNED_KEYWORDS, INITIAL_CATEGORIES } from '../data/initialData';
+import articleNeuralPoetry from '../assets/images/article_neural_poetry_1790412823487.jpg';
 
 export interface RealTimeSession {
   sessionId: string;
@@ -304,7 +305,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       authorDepartment: currentUser.department,
       authorAvatar: currentUser.avatar,
       category: chosenCategory,
-      coverImage: articleData.coverImage || '/src/assets/images/article_neural_poetry_1790412823487.jpg',
+      coverImage: articleData.coverImage || articleNeuralPoetry,
       content: articleData.content || '',
       abstract: articleData.abstract || (articleData.content ? articleData.content.slice(0, 180) + '...' : ''),
       readTimeMinutes: readTime,
