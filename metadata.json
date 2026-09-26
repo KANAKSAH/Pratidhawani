@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix The Quadrangle - Campus Literary \u0026 Technical Review",
+  "description": "Campus literary and technical publication platform where student authors publish articles, poems, and artwork with peer review and annual editions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

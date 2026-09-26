@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, Cambria, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.font-editorial-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom drop cap */
+.editorial-drop-cap::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 0.85;
+  font-weight: 600;
+  float: left;
+  margin-right: 0.65rem;
+  margin-top: 0.2rem;
+  color: #9A3412;
+}
+
