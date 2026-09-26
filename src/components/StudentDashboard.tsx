@@ -1,6 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import { Article, ArticleCategory, ArticleStatus, AIAnalysisResult } from '../types';
+import articleNeuralPoetry from '../assets/images/article_neural_poetry_1790412823487.jpg';
+import articleQuantumComputing from '../assets/images/article_quantum_computing_1790412835682.jpg';
+import spotlightMagazineCover from '../assets/images/spotlight_magazine_cover_1790412809281.jpg';
+import campusLiterarySociety from '../assets/images/campus_literary_society_1790412848157.jpg';
 import {
   PenTool,
   FileText,
@@ -53,7 +57,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ onOpenArticl
   const [content, setContent] = useState('');
   const [tags, setTags] = useState<string[]>(['sci-fi', 'software development']);
   const [newTagInput, setNewTagInput] = useState('');
-  const [coverImage, setCoverImage] = useState('/src/assets/images/article_neural_poetry_1790412823487.jpg');
+  const [coverImage, setCoverImage] = useState(articleNeuralPoetry);
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
 
   // AI Assistant State (+10 M Bonus)
@@ -136,10 +140,10 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ onOpenArticl
   };
 
   const sampleCoverImages = [
-    { label: 'Typewriter & Poetry Manuscripts', url: '/src/assets/images/article_neural_poetry_1790412823487.jpg' },
-    { label: 'Cryogenic Quantum Chandelier', url: '/src/assets/images/article_quantum_computing_1790412835682.jpg' },
-    { label: 'Annual Print Broadsheet Artwork', url: '/src/assets/images/spotlight_magazine_cover_1790412809281.jpg' },
-    { label: 'Library Archives & Seminar Room', url: '/src/assets/images/campus_literary_society_1790412848157.jpg' },
+    { label: 'Typewriter & Poetry Manuscripts', url: articleNeuralPoetry },
+    { label: 'Cryogenic Quantum Chandelier', url: articleQuantumComputing },
+    { label: 'Annual Print Broadsheet Artwork', url: spotlightMagazineCover },
+    { label: 'Library Archives & Seminar Room', url: campusLiterarySociety },
   ];
 
   // Load article into editor
@@ -151,7 +155,7 @@ export const StudentDashboard: React.FC<StudentDashboardProps> = ({ onOpenArticl
     setAbstract(art.abstract);
     setContent(art.content);
     setTags(art.tags && art.tags.length ? art.tags : ['Collegiate']);
-    setCoverImage(art.coverImage || '/src/assets/images/article_neural_poetry_1790412823487.jpg');
+    setCoverImage(art.coverImage || articleNeuralPoetry);
     if (art.aiAnalysis) {
       setAiResult(art.aiAnalysis);
     }
