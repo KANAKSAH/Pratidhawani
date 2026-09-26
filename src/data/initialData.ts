@@ -1,4 +1,8 @@
 import { User, Article, Edition, AppNotification, Category } from '../types';
+import spotlightMagazineCover from '../assets/images/spotlight_magazine_cover_1790412809281.jpg';
+import articleNeuralPoetry from '../assets/images/article_neural_poetry_1790412823487.jpg';
+import articleQuantumComputing from '../assets/images/article_quantum_computing_1790412835682.jpg';
+import campusLiterarySociety from '../assets/images/campus_literary_society_1790412848157.jpg';
 
 export const INITIAL_CATEGORIES: Category[] = [
   {
@@ -117,7 +121,7 @@ export const INITIAL_EDITION: Edition = {
   academicYear: '2025–2026',
   title: 'Silicon & Stanzas: The 2026 Annual Edition',
   subtitle: 'Dialogues on Algorithmic Solitude, Quantum Coherence, and Contemporary Campus Poetics',
-  coverImage: '/src/assets/images/spotlight_magazine_cover_1790412809281.jpg',
+  coverImage: spotlightMagazineCover,
   publicationDate: 'March 2026',
   editorInChief: 'Prof. Gayatri Sengupta',
   managingEditor: 'Dr. Anand Vardhan',
@@ -160,7 +164,7 @@ export const INITIAL_ARTICLES: Article[] = [
     authorDepartment: 'Computer Science & Indic Computational Linguistics',
     authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&q=80',
     category: 'Technical Research',
-    coverImage: '/src/assets/images/article_neural_poetry_1790412823487.jpg',
+    coverImage: articleNeuralPoetry,
     readTimeMinutes: 7,
     tags: ['software development', 'Computational Poetics', 'Dhvani Theory', 'NLP', 'Aesthetics'],
     status: 'published',
@@ -237,7 +241,7 @@ As student technologists and writers working at the confluence of silicon hardwa
     authorDepartment: 'Applied Physics & Quantum Condensed Matter',
     authorAvatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=256&q=80',
     category: 'Technical Research',
-    coverImage: '/src/assets/images/article_quantum_computing_1790412835682.jpg',
+    coverImage: articleQuantumComputing,
     readTimeMinutes: 9,
     tags: ['software development', 'Condensed Matter', 'Bose Statistics', 'Quantum Optics', 'Cryogenics'],
     status: 'published',
@@ -380,7 +384,7 @@ By making both the PCB schematics and the calibration firmware public under perm
     authorDepartment: 'Comparative Literature & Philosophy of Science',
     authorAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
     category: 'Creative Writing',
-    coverImage: '/src/assets/images/spotlight_magazine_cover_1790412809281.jpg',
+    coverImage: spotlightMagazineCover,
     readTimeMinutes: 8,
     tags: ['sci-fi', 'software development', 'Creative Writing', 'Speculative Fiction', 'Antariksha'],
     status: 'published',
@@ -432,7 +436,7 @@ They watched in quiet fascination as the compiler looped through its memory regi
     authorDepartment: 'Environmental Robotics & Sensor Systems',
     authorAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80',
     category: 'Campus Life',
-    coverImage: '/src/assets/images/campus_literary_society_1790412848157.jpg',
+    coverImage: campusLiterarySociety,
     readTimeMinutes: 5,
     tags: ['campus events', 'software development', 'Campus Life', 'Hackathon', 'Chai Culture'],
     status: 'published',
@@ -467,7 +471,7 @@ In an era of hyper-individualized academic performance, the collegiate hackathon
     authorDepartment: 'Computer Science & Indic Computational Linguistics',
     authorAvatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&q=80',
     category: 'Opinion',
-    coverImage: '/src/assets/images/article_quantum_computing_1790412835682.jpg',
+    coverImage: articleQuantumComputing,
     readTimeMinutes: 6,
     tags: ['software development', 'campus events', 'Opinion', 'Academic Freedom', 'Swaraj in Ideas'],
     status: 'published',
